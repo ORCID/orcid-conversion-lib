@@ -4,7 +4,8 @@ Simple application that takes an XML or JSON file and outputs the other version 
 
 ## Usage
 
-```java -jar orcid-public-lib.jar OPTIONS```
+Download the executable jar https://github.com/ORCID/orcid-public-lib/raw/master/target/orcid-public-lib-2.1-jar-with-dependencies.jar 
+execute: ```java -jar orcid-public-lib.jar OPTIONS```
 
 Options:
 -  --input-file [-i] (a string; default: "")
