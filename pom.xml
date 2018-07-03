@@ -1,0 +1,176 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.orcid</groupId>
+  <artifactId>orcid-public-lib</artifactId>
+  <version>2.1</version>
+  <packaging>jar</packaging>
+
+  <name>orcid-public-lib</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+<distributionManagement>
+  <snapshotRepository>
+    <id>ossrh</id>
+    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+  </snapshotRepository>
+  <repository>
+    <id>ossrh</id>
+    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+  </repository>
+</distributionManagement>
+
+<!-- Note, need the following in Maven settings.xml file. to deploy to sonatype repo 
+<settings>
+  <servers>
+    <server>
+      <id>ossrh</id>
+      <username>**your-jira-id**</username>
+      <password>**your-jira-pwd**</password>
+    </server>
+  </servers>
+  <profiles>
+    <profile>
+      <id>ossrh</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <gpg.executable>gpg2</gpg.executable>
+        <gpg.passphrase>**the_pass_phrase**</gpg.passphrase>
+      </properties>
+    </profile>
+  </profiles>
+</settings>
+ -->
+ 
+<build>
+  <plugins>
+    <!-- Deploy SNAPSHOT versions to sonatype staging repo -->
+    <!-- Deploy release versions to Maven Central -->
+    <!-- use `mvn clean deploy` -->
+    <plugin>
+	  <groupId>org.sonatype.plugins</groupId>
+	  <artifactId>nexus-staging-maven-plugin</artifactId>
+	  <version>1.6.7</version>
+	  <extensions>true</extensions>
+	  <configuration>
+	     <serverId>ossrh</serverId>
+	     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+	     <autoReleaseAfterClose>true</autoReleaseAfterClose>
+	  </configuration>
+	</plugin>
+	<!-- Set a compiler level -->
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-compiler-plugin</artifactId>
+		<version>2.3.2</version>
+		<configuration>
+			<source>1.8</source>
+			<target>1.8</target>
+		</configuration>
+	</plugin>
+    <!-- Include sources -->
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-source-plugin</artifactId>
+      <version>2.2.1</version>
+      <executions>
+        <execution>
+          <id>attach-sources</id>
+          <goals>
+            <goal>jar-no-fork</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+    <!-- Javadoc mandatory for mvn central -->
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-javadoc-plugin</artifactId>
+      <version>2.9.1</version>
+      <executions>
+        <execution>
+          <id>attach-javadocs</id>
+          <goals>
+            <goal>jar</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+    <!--  so we sign our jar file 
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-gpg-plugin</artifactId>
+      <version>1.5</version>
+      <executions>
+        <execution>
+          <id>sign-artifacts</id>
+          <phase>verify</phase>
+          <goals>
+            <goal>sign</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin> -->
+    
+    <!-- Enable copying of dependencies for an executable jar -->
+    <!--  use `mvn assembly:single` to build -->
+	<plugin>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-assembly-plugin</artifactId>
+	    <executions>
+	        <execution>
+	            <phase>package</phase>
+	            <goals>
+	                <goal>single</goal>
+	            </goals>
+	            <configuration>
+	                <archive>
+	                <manifest>
+	                    <mainClass>
+	                        org.orcid.publiclib.App
+	                    </mainClass>
+	                </manifest>
+	                </archive>
+	                <descriptorRefs>
+	                    <descriptorRef>jar-with-dependencies</descriptorRef>
+	                </descriptorRefs>
+	            </configuration>
+	        </execution>
+	    </executions>
+	</plugin>
+  </plugins>
+  
+</build>
+
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.orcid</groupId>
+      <artifactId>orcid-model</artifactId>
+      <version>1.1.5-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-core</artifactId>
+	    <version>2.9.4</version>
+	</dependency>
+	<dependency>
+	  <groupId>com.github.pcj</groupId>
+	  <artifactId>google-options</artifactId>
+	  <version>1.0.0</version>
+	</dependency>
+  </dependencies>
+</project>
