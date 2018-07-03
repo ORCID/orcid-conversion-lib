@@ -1,6 +1,6 @@
 # ORCID PUBLIC UTILS
 
-Simple application that takes an XML or JSON file and outputs the other version to the console or a file.  Available as an executable jar.  The jar can be found in the /target directory.
+Simple application that takes an XML or JSON file and outputs the other version to the console or a file. Downgrading alawy matches what the API would return. Upgradig may not always match as newer version of the API may have new elments and mappings only avialable via a direct API call. The jar can be found in the /target directory.
 
 ## Usage
 
