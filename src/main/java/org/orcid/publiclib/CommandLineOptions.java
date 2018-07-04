@@ -19,9 +19,9 @@ public class CommandLineOptions extends OptionsBase {
     @Option(name = "format", help = "the format of the source file", abbrev = 'f', defaultValue = "xml", converter = InputFormatConverter.class)
     public InputFormat inputFormat;
 
-    @Option(name = "input-file", help = "Location of the input file", abbrev = 'i', defaultValue = "")
+    @Option(name = "input-file", help = "Location of the input file (optional, can pipe in)", abbrev = 'i', defaultValue = "")
     public String fileName;
 
-    @Option(name = "output-file", help = "Location of the output file (optional)", abbrev = 'o', defaultValue = "")
+    @Option(name = "output-file", help = "Location of the output file (optional, can pipe out)", abbrev = 'o', defaultValue = "")
     public String outputFileName;
 }

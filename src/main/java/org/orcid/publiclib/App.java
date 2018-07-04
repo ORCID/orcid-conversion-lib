@@ -43,13 +43,9 @@ public class App {
         }
         optionsParser.parseAndExitUponError(args);
         CommandLineOptions options = optionsParser.getOptions(CommandLineOptions.class);
-        if (options.fileName.isEmpty() || options.inputFormat == null) {
-            printUse();
-            return;
-        }
         try {
             OrcidTranslatorV2 t = new OrcidTranslatorV2();
-            t.translate(options.fileName, Optional.ofNullable(options.outputFileName), options.inputFormat);
+            t.translate(Optional.ofNullable(options.fileName), Optional.ofNullable(options.outputFileName), options.inputFormat);
         } catch (FileNotFoundException e) {
             System.err.println("File not found: " + options.fileName);
             return;

@@ -14,57 +14,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-<distributionManagement>
-  <snapshotRepository>
-    <id>ossrh</id>
-    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-  </snapshotRepository>
-  <repository>
-    <id>ossrh</id>
-    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-  </repository>
-</distributionManagement>
-
-<!-- Note, need the following in Maven settings.xml file. to deploy to sonatype repo 
-<settings>
-  <servers>
-    <server>
-      <id>ossrh</id>
-      <username>**your-jira-id**</username>
-      <password>**your-jira-pwd**</password>
-    </server>
-  </servers>
-  <profiles>
-    <profile>
-      <id>ossrh</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-        <gpg.executable>gpg2</gpg.executable>
-        <gpg.passphrase>**the_pass_phrase**</gpg.passphrase>
-      </properties>
-    </profile>
-  </profiles>
-</settings>
- -->
  
 <build>
   <plugins>
-    <!-- Deploy SNAPSHOT versions to sonatype staging repo -->
-    <!-- Deploy release versions to Maven Central -->
-    <!-- use `mvn clean deploy` -->
-    <plugin>
-	  <groupId>org.sonatype.plugins</groupId>
-	  <artifactId>nexus-staging-maven-plugin</artifactId>
-	  <version>1.6.7</version>
-	  <extensions>true</extensions>
-	  <configuration>
-	     <serverId>ossrh</serverId>
-	     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-	     <autoReleaseAfterClose>true</autoReleaseAfterClose>
-	  </configuration>
-	</plugin>
 	<!-- Set a compiler level -->
 	<plugin>
 		<groupId>org.apache.maven.plugins</groupId>
@@ -103,24 +55,8 @@
         </execution>
       </executions>
     </plugin>
-    <!--  so we sign our jar file 
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-gpg-plugin</artifactId>
-      <version>1.5</version>
-      <executions>
-        <execution>
-          <id>sign-artifacts</id>
-          <phase>verify</phase>
-          <goals>
-            <goal>sign</goal>
-          </goals>
-        </execution>
-      </executions>
-    </plugin> -->
     
     <!-- Enable copying of dependencies for an executable jar -->
-    <!--  use `mvn assembly:single` to build -->
 	<plugin>
 	    <groupId>org.apache.maven.plugins</groupId>
 	    <artifactId>maven-assembly-plugin</artifactId>

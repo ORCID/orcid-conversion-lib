@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.io.Reader;
 import java.io.Writer;
@@ -77,7 +78,7 @@ public class OrcidTranslatorV2 {
      * Translate one version to another using files on the file system
      * 
      * @param inputFilename
-     *            The input file to read
+     *            The input file to read.  If missing will read from System.in
      * @param outputFilename
      *            The output file to write to. If missing, will output to
      *            System.out
@@ -90,11 +91,17 @@ public class OrcidTranslatorV2 {
      * @throws JAXBException
      * @throws JsonParseException
      */
-    public void translate(String inputFilename, Optional<String> outputFilename, InputFormat inputFormat)
+    public void translate(Optional<String> inputFilename, Optional<String> outputFilename, InputFormat inputFormat)
             throws FileNotFoundException, IOException, JsonGenerationException, JsonMappingException, JAXBException, JsonParseException {
+        
         // Read the file
-        File file = new File(inputFilename);
-        FileReader r = new FileReader(file);
+        Reader r;
+        if (inputFilename.isPresent() && !inputFilename.get().isEmpty()) {
+            File file = new File(inputFilename.get());
+            r = new FileReader(file);
+        } else {
+            r = new InputStreamReader(System.in);
+        }
 
         // Work out where to write the file
         Writer w;
