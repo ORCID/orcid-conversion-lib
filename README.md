@@ -24,7 +24,8 @@ Options:
 
 ## Model classes:
 
-This jar also includes a simple translation class to parse XML and JSON into JAXB annotated beans and contains the full ORCID 2.0/2.1 model as JAXB annotated beans.  
-If you wish to use them in your own code, the place to start is ```org.orcid.publiclib.OrcidTranslatorV2``` or ```org.orcid.jaxb.model.record_v2.Record``` or the other ```org.orcid.jaxb.model.*``` classes 
+This jar also includes a simple translation class to parse XML and JSON into JAXB annotated beans and contains the full ORCID 2.0/2.1 model as JAXB annotated beans.
+However, as the jar contains all transitive dependencies, it is not advisable to use it as a dependency in your own projects.
 
-Note, as the jar contains all transitive dependencies, it is not advisable to use it as a dependency in your own projects.
+If you wish to use the JAXB beans directly, **please use [https://github.com/ORCID/orcid-public-lib/raw/master/orcid-model/orcid-model-1.1.5-SNAPSHOT.jar]**.  This contains just the model and none of the dependencies.  
+The place to start is ```org.orcid.publiclib.OrcidTranslatorV2``` or ```org.orcid.jaxb.model.record_v2.Record``` or the other ```org.orcid.jaxb.model.*``` classes 
