@@ -28,4 +28,4 @@ This jar also includes a simple translation class to parse XML and JSON into JAX
 However, as the jar contains all transitive dependencies, it is not advisable to use it as a dependency in your own projects.
 
 If you wish to use the JAXB beans directly, [please use the orcid-model jar](https://github.com/ORCID/orcid-public-lib/raw/master/orcid-model/orcid-model-1.1.5-SNAPSHOT.jar).  This contains just the model and none of the dependencies.  
-The place to start is ```org.orcid.publiclib.OrcidTranslatorV2``` or ```org.orcid.jaxb.model.record_v2.Record``` or the other ```org.orcid.jaxb.model.*``` classes 
+The place to start is ```org.orcid.jaxb.model.record_v2.Record``` or the other ```org.orcid.jaxb.model.*``` classes.  [OrcidTranslatorV2](https://github.com/ORCID/orcid-public-lib/blob/master/src/main/java/org/orcid/publiclib/OrcidTranslatorV2.java) demonstrates how to serialize and deserialize XML and Java using JAXB. 
