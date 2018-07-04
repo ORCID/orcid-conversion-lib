@@ -14,6 +14,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+	<!-- NOTE TO DEVELOPERS -->
+	<!-- `mvn clean install` compiles, tests and generates FAT executable jar -->
+	<!-- `mvn dependency:copy -Dcopy.artifactId=orcid-model` creates a copy of your current orcid-model jar in the repo -->
 
 	<build>
 		<plugins>
