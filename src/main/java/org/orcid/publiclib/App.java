@@ -44,7 +44,7 @@ public class App {
         optionsParser.parseAndExitUponError(args);
         CommandLineOptions options = optionsParser.getOptions(CommandLineOptions.class);
         try {
-            OrcidTranslatorV2 t = new OrcidTranslatorV2();
+            OrcidTranslator t = new OrcidTranslator(options.schemaVersion);
             t.translate(Optional.ofNullable(options.fileName), Optional.ofNullable(options.outputFileName), options.inputFormat);
         } catch (FileNotFoundException e) {
             System.err.println("File not found: " + options.fileName);
