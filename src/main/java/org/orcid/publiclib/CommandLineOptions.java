@@ -15,6 +15,16 @@ public class CommandLineOptions extends OptionsBase {
             super(InputFormat.class, "input format");
         }
     }
+    
+    public static class SchemaVersionConverter extends EnumConverter<SchemaVersion> {
+
+        public SchemaVersionConverter() {
+            super(SchemaVersion.class, "schema version");
+        }
+    }
+
+    @Option(name = "schema-version", help = "the schema version of the source file", abbrev = 'v', defaultValue = "v2_1", converter = SchemaVersionConverter.class)
+    public SchemaVersion schemaVersion;
 
     @Option(name = "format", help = "the format of the source file", abbrev = 'f', defaultValue = "xml", converter = InputFormatConverter.class)
     public InputFormat inputFormat;
