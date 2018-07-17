@@ -22,7 +22,7 @@ public class OrcidTranslatorTest {
 
     @Test
     public void testReadJsonWriteXmlV2_0() throws JsonParseException, JsonMappingException, IOException, JAXBException {
-        OrcidTranslator t = new OrcidTranslator(SchemaVersion.V2_0);
+        OrcidTranslator<Record> t = OrcidTranslator.v2_0();
         URL url = Resources.getResource("test-publiclib-record-2.0.json");
         InputStream is = url.openStream();
         Record r = t.readJsonRecord(new InputStreamReader(is));
@@ -34,7 +34,7 @@ public class OrcidTranslatorTest {
     
     @Test
     public void testReadJsonWriteXmlV2_1() throws JsonParseException, JsonMappingException, IOException, JAXBException {
-        OrcidTranslator t = new OrcidTranslator(SchemaVersion.V2_1);
+        OrcidTranslator<Record> t = OrcidTranslator.v2_1();
         URL url = Resources.getResource("test-publiclib-record-2.1.json");
         InputStream is = url.openStream();
         Record r = t.readJsonRecord(new InputStreamReader(is));
@@ -46,10 +46,10 @@ public class OrcidTranslatorTest {
     
     //@Test
     public void testReadJsonWriteXmlV3_0RC1() throws JsonParseException, JsonMappingException, IOException, JAXBException {
-        OrcidTranslator t = new OrcidTranslator(SchemaVersion.V3_0RC1);
+        OrcidTranslator<org.orcid.jaxb.model.v3.rc1.record.Record> t = OrcidTranslator.v3_0RC1();
         URL url = Resources.getResource("test-publiclib-record-3.0_rc1.json");
         InputStream is = url.openStream();
-        Record r = t.readJsonRecord(new InputStreamReader(is));
+        org.orcid.jaxb.model.v3.rc1.record.Record r = t.readJsonRecord(new InputStreamReader(is));
         assertEquals("0000-0003-0902-4386", r.getOrcidIdentifier().getPath());
         StringWriter sw = new StringWriter();
         t.writeXmlRecord(sw, r);
@@ -58,7 +58,7 @@ public class OrcidTranslatorTest {
 
     @Test
     public void testReadXmlWriteJsonV2_0() throws JAXBException, IOException {
-        OrcidTranslator t = new OrcidTranslator(SchemaVersion.V2_0);
+        OrcidTranslator<Record> t = OrcidTranslator.v2_0();
         URL url = Resources.getResource("test-publiclib-record-2.0.xml");
         InputStream is = url.openStream();
         Record r = t.readXmlRecord(new InputStreamReader(is));
@@ -70,7 +70,7 @@ public class OrcidTranslatorTest {
     
     @Test
     public void testReadXmlWriteJsonV2_1() throws JAXBException, IOException {
-        OrcidTranslator t = new OrcidTranslator(SchemaVersion.V2_1);
+        OrcidTranslator<Record> t = OrcidTranslator.v2_1();
         URL url = Resources.getResource("test-publiclib-record-2.1.xml");
         InputStream is = url.openStream();
         Record r = t.readXmlRecord(new InputStreamReader(is));
@@ -82,10 +82,10 @@ public class OrcidTranslatorTest {
     
     //@Test
     public void testReadXmlWriteJsonV3_0RC1() throws JAXBException, IOException {
-        OrcidTranslator t = new OrcidTranslator(SchemaVersion.V3_0RC1);
+        OrcidTranslator<org.orcid.jaxb.model.v3.rc1.record.Record> t = OrcidTranslator.v3_0RC1();
         URL url = Resources.getResource("test-publiclib-record-3.0_rc1.xml");
         InputStream is = url.openStream();
-        Record r = t.readXmlRecord(new InputStreamReader(is));
+        org.orcid.jaxb.model.v3.rc1.record.Record r = t.readXmlRecord(new InputStreamReader(is));
         assertEquals("0000-0003-0902-4386", r.getOrcidIdentifier().getPath());
         StringWriter sw = new StringWriter();
         t.writeJsonRecord(sw, r);

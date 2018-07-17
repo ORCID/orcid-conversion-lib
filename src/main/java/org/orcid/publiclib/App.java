@@ -2,6 +2,7 @@ package org.orcid.publiclib;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.Optional;
 
@@ -44,7 +45,18 @@ public class App {
         optionsParser.parseAndExitUponError(args);
         CommandLineOptions options = optionsParser.getOptions(CommandLineOptions.class);
         try {
-            OrcidTranslator t = new OrcidTranslator(options.schemaVersion);
+            OrcidTranslator<?> t = null;
+            switch (options.schemaVersion) {
+            case V2_0:
+                t = OrcidTranslator.v2_0();
+                break;
+            case V2_1:
+                t = OrcidTranslator.v2_1();
+                break;
+            case V3_0RC1:
+                t = OrcidTranslator.v3_0RC1();
+                break;
+            }
             t.translate(Optional.ofNullable(options.fileName), Optional.ofNullable(options.outputFileName), options.inputFormat);
         } catch (FileNotFoundException e) {
             System.err.println("File not found: " + options.fileName);
