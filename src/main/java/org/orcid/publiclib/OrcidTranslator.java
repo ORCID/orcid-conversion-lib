@@ -20,7 +20,6 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 
-import org.orcid.jaxb.model.record_v2.Record;
 import org.orcid.publiclib.CommandLineOptions.InputFormat;
 import org.xml.sax.SAXException;
 
@@ -39,25 +38,47 @@ import com.google.common.io.Resources;
  * @author tom
  *
  */
-public class OrcidTranslator {
+public class OrcidTranslator<T> {
 
     private ObjectMapper mapper;
     Unmarshaller unmarshaller;
     Marshaller marshaller;
+    Class<?> modelClass;
+    
+    /**
+     * @return a new v2.0 OrcidTranslator
+     */
+    public static OrcidTranslator<org.orcid.jaxb.model.record_v2.Record> v2_0(){
+        return new OrcidTranslator<org.orcid.jaxb.model.record_v2.Record>(SchemaVersion.V2_0);
+    }
+    
+    /**
+     * @return a new v2.1 OrcidTranslator
+     */
+    public static OrcidTranslator<org.orcid.jaxb.model.record_v2.Record> v2_1(){
+        return new OrcidTranslator<org.orcid.jaxb.model.record_v2.Record>(SchemaVersion.V2_1);
+    }
+
+    /**
+     * @return a new v3.0rc1 OrcidTranslator
+     */
+    public static OrcidTranslator<org.orcid.jaxb.model.v3.rc1.record.Record> v3_0RC1(){
+        return new OrcidTranslator<org.orcid.jaxb.model.v3.rc1.record.Record>(SchemaVersion.V3_0RC1);
+    }
 
     /**
      * Creates a translator suitable for v2.1 or v2.0 API results. Initialises
      * marshaller and unmarshaler
      * 
      */
-    public OrcidTranslator(SchemaVersion location) {
+    private OrcidTranslator(SchemaVersion location) {
         mapper = new ObjectMapper();
         JaxbAnnotationModule module = new JaxbAnnotationModule();
         mapper.registerModule(module);
         mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
-
+        modelClass = location.modelClass;
         try {
-            JAXBContext context = JAXBContext.newInstance(Record.class);
+            JAXBContext context = JAXBContext.newInstance(modelClass);
             SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             URL url = Resources.getResource(location.location);
             Schema schema = sf.newSchema(url);
@@ -129,8 +150,9 @@ public class OrcidTranslator {
      * @throws JsonMappingException
      * @throws IOException
      */
-    public Record readJsonRecord(Reader reader) throws JsonParseException, JsonMappingException, IOException {
-        return mapper.readValue(reader, Record.class);
+    @SuppressWarnings("unchecked")
+    public T readJsonRecord(Reader reader) throws JsonParseException, JsonMappingException, IOException {
+        return (T) mapper.readValue(reader, modelClass);
     }
 
     /**
@@ -141,8 +163,9 @@ public class OrcidTranslator {
      * @return a V2 ORCID record bean
      * @throws JAXBException
      */
-    public Record readXmlRecord(Reader reader) throws JAXBException {
-        return (Record) unmarshaller.unmarshal(reader);
+    @SuppressWarnings("unchecked")
+    public T readXmlRecord(Reader reader) throws JAXBException {
+        return (T) unmarshaller.unmarshal(reader);
     }
 
     /**
@@ -156,7 +179,7 @@ public class OrcidTranslator {
      * @throws JsonMappingException
      * @throws IOException
      */
-    public void writeJsonRecord(Writer w, Record r) throws JsonGenerationException, JsonMappingException, IOException {
+    public void writeJsonRecord(Writer w, T r) throws JsonGenerationException, JsonMappingException, IOException {
         mapper.writeValue(w, r);
     }
 
@@ -169,7 +192,7 @@ public class OrcidTranslator {
      *            the record to read
      * @throws JAXBException
      */
-    public void writeXmlRecord(Writer w, Record r) throws JAXBException {
+    public void writeXmlRecord(Writer w, T r) throws JAXBException {
         marshaller.marshal(r, w);
     }
 
