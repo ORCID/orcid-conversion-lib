@@ -45,6 +45,7 @@ public class App {
         optionsParser.parseAndExitUponError(args);
         CommandLineOptions options = optionsParser.getOptions(CommandLineOptions.class);
         try {
+            System.setProperty("com.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize", "true");
             OrcidTranslator<?> t = null;
             switch (options.schemaVersion) {
             case V2_0:
