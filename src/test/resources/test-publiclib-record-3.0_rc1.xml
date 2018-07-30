@@ -424,10 +424,10 @@
                         </common:external-id>
                     </common:external-ids>
                     <work:type>journal-article</work:type>
-                    <work:journal-title>Procedia Computer Science</work:journal-title>
                     <common:publication-date>
                         <common:year>2017</common:year>
                     </common:publication-date>
+                    <work:journal-title>Procedia Computer Science</work:journal-title>
                 </work:work-summary>
                 <work:work-summary put-code="39452355" path="/0000-0003-0902-4386/work/39452355" visibility="public" display-index="1">
                     <common:created-date>2017-12-08T16:35:08.107Z</common:created-date>
@@ -488,11 +488,11 @@
                         </common:external-id>
                     </common:external-ids>
                     <work:type>journal-article</work:type>
-                    <work:journal-title>Publications</work:journal-title>
                     <common:publication-date>
                         <common:year>2016</common:year>
                         <common:month>09</common:month>
                     </common:publication-date>
+                    <work:journal-title>Publications</work:journal-title>
                 </work:work-summary>
             </activities:group>
             <activities:group>
@@ -528,10 +528,10 @@
                         </common:external-id>
                     </common:external-ids>
                     <work:type>data-set</work:type>
-                    <work:journal-title>Figshare</work:journal-title>
                     <common:publication-date>
                         <common:year>2016</common:year>
                     </common:publication-date>
+                    <work:journal-title>Figshare</work:journal-title>
                 </work:work-summary>
             </activities:group>
             <activities:group>
@@ -567,10 +567,10 @@
                         </common:external-id>
                     </common:external-ids>
                     <work:type>data-set</work:type>
-                    <work:journal-title>Figshare</work:journal-title>
                     <common:publication-date>
                         <common:year>2016</common:year>
                     </common:publication-date>
+                    <work:journal-title>Figshare</work:journal-title>
                 </work:work-summary>
             </activities:group>
             <activities:group>
@@ -606,10 +606,10 @@
                         </common:external-id>
                     </common:external-ids>
                     <work:type>other</work:type>
-                    <work:journal-title>ORCID</work:journal-title>
                     <common:publication-date>
                         <common:year>2016</common:year>
                     </common:publication-date>
+                    <work:journal-title>ORCID</work:journal-title>
                 </work:work-summary>
             </activities:group>
             <activities:group>
@@ -645,10 +645,10 @@
                         </common:external-id>
                     </common:external-ids>
                     <work:type>other</work:type>
-                    <work:journal-title>Figshare</work:journal-title>
                     <common:publication-date>
                         <common:year>2016</common:year>
                     </common:publication-date>
+                    <work:journal-title>Figshare</work:journal-title>
                 </work:work-summary>
             </activities:group>
             <activities:group>
@@ -684,10 +684,10 @@
                         </common:external-id>
                     </common:external-ids>
                     <work:type>other</work:type>
-                    <work:journal-title>Zenodo</work:journal-title>
                     <common:publication-date>
                         <common:year>2016</common:year>
                     </common:publication-date>
+                    <work:journal-title>Zenodo</work:journal-title>
                 </work:work-summary>
             </activities:group>
             <activities:group>
@@ -723,10 +723,10 @@
                         </common:external-id>
                     </common:external-ids>
                     <work:type>other</work:type>
-                    <work:journal-title>Zenodo</work:journal-title>
                     <common:publication-date>
                         <common:year>2016</common:year>
                     </common:publication-date>
+                    <work:journal-title>Zenodo</work:journal-title>
                 </work:work-summary>
             </activities:group>
             <activities:group>
@@ -762,10 +762,10 @@
                         </common:external-id>
                     </common:external-ids>
                     <work:type>other</work:type>
-                    <work:journal-title>Zenodo</work:journal-title>
                     <common:publication-date>
                         <common:year>2016</common:year>
                     </common:publication-date>
+                    <work:journal-title>Zenodo</work:journal-title>
                 </work:work-summary>
             </activities:group>
             <activities:group>
@@ -801,10 +801,10 @@
                         </common:external-id>
                     </common:external-ids>
                     <work:type>other</work:type>
-                    <work:journal-title>ORCID</work:journal-title>
                     <common:publication-date>
                         <common:year>2016</common:year>
                     </common:publication-date>
+                    <work:journal-title>ORCID</work:journal-title>
                 </work:work-summary>
             </activities:group>
             <activities:group>
@@ -879,10 +879,10 @@
                         </common:external-id>
                     </common:external-ids>
                     <work:type>other</work:type>
-                    <work:journal-title>Zenodo</work:journal-title>
                     <common:publication-date>
                         <common:year>2015</common:year>
                     </common:publication-date>
+                    <work:journal-title>Zenodo</work:journal-title>
                 </work:work-summary>
             </activities:group>
             <activities:group>
@@ -983,10 +983,10 @@
                         </common:external-id>
                     </common:external-ids>
                     <work:type>data-set</work:type>
-                    <work:journal-title>Figshare</work:journal-title>
                     <common:publication-date>
                         <common:year>2015</common:year>
                     </common:publication-date>
+                    <work:journal-title>Figshare</work:journal-title>
                 </work:work-summary>
             </activities:group>
             <activities:group>
@@ -1022,10 +1022,10 @@
                         </common:external-id>
                     </common:external-ids>
                     <work:type>other</work:type>
-                    <work:journal-title>DataCite</work:journal-title>
                     <common:publication-date>
                         <common:year>2015</common:year>
                     </common:publication-date>
+                    <work:journal-title>DataCite</work:journal-title>
                 </work:work-summary>
             </activities:group>
             <activities:group>

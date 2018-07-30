@@ -44,7 +44,7 @@ public class OrcidTranslatorTest {
         assertTrue(sw.toString().contains("<common:path>0000-0003-0902-4386</common:path>"));
     }
     
-    //@Test
+    @Test
     public void testReadJsonWriteXmlV3_0RC1() throws JsonParseException, JsonMappingException, IOException, JAXBException {
         OrcidTranslator<org.orcid.jaxb.model.v3.rc1.record.Record> t = OrcidTranslator.v3_0RC1();
         URL url = Resources.getResource("test-publiclib-record-3.0_rc1.json");
@@ -80,7 +80,7 @@ public class OrcidTranslatorTest {
         assertTrue(sw.toString().contains("\"path\" : \"0000-0003-0902-4386\","));
     }
     
-    //@Test
+    @Test
     public void testReadXmlWriteJsonV3_0RC1() throws JAXBException, IOException {
         OrcidTranslator<org.orcid.jaxb.model.v3.rc1.record.Record> t = OrcidTranslator.v3_0RC1();
         URL url = Resources.getResource("test-publiclib-record-3.0_rc1.xml");
