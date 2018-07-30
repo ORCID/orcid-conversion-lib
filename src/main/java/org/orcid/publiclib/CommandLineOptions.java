@@ -34,4 +34,8 @@ public class CommandLineOptions extends OptionsBase {
 
     @Option(name = "output-file", help = "Location of the output file (optional, can pipe out)", abbrev = 'o', defaultValue = "")
     public String outputFileName;
+    
+    @Option(name = "schema-validate", help = "If true, validate XML input and output against the schema", abbrev = 's', defaultValue = "false")
+    public boolean schemaValidate;
+
 }

@@ -49,13 +49,13 @@ public class App {
             OrcidTranslator<?> t = null;
             switch (options.schemaVersion) {
             case V2_0:
-                t = OrcidTranslator.v2_0();
+                t = OrcidTranslator.v2_0(options.schemaValidate);
                 break;
             case V2_1:
-                t = OrcidTranslator.v2_1();
+                t = OrcidTranslator.v2_1(options.schemaValidate);
                 break;
             case V3_0RC1:
-                t = OrcidTranslator.v3_0RC1();
+                t = OrcidTranslator.v3_0RC1(options.schemaValidate);
                 break;
             }
             t.translate(Optional.ofNullable(options.fileName), Optional.ofNullable(options.outputFileName), options.inputFormat);

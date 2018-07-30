@@ -19,6 +19,8 @@ Options:
     Location of the output file (optional, can pipe out)
 -  --schema-version [-v] (v2_0, v2_1 or v3_0rc1; default: "v2_1")
     the schema version of the source file
+-  --[no]schema-validate [-s] (a boolean; default: "false")
+    If true, validate XML input and output against the schema
 
 ## Example usage:
 
