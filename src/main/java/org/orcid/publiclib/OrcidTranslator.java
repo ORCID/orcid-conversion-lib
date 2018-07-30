@@ -48,22 +48,22 @@ public class OrcidTranslator<T> {
     /**
      * @return a new v2.0 OrcidTranslator
      */
-    public static OrcidTranslator<org.orcid.jaxb.model.record_v2.Record> v2_0(){
-        return new OrcidTranslator<org.orcid.jaxb.model.record_v2.Record>(SchemaVersion.V2_0);
+    public static OrcidTranslator<org.orcid.jaxb.model.record_v2.Record> v2_0(boolean schemaValidate){
+        return new OrcidTranslator<org.orcid.jaxb.model.record_v2.Record>(SchemaVersion.V2_0,schemaValidate);
     }
     
     /**
      * @return a new v2.1 OrcidTranslator
      */
-    public static OrcidTranslator<org.orcid.jaxb.model.record_v2.Record> v2_1(){
-        return new OrcidTranslator<org.orcid.jaxb.model.record_v2.Record>(SchemaVersion.V2_1);
+    public static OrcidTranslator<org.orcid.jaxb.model.record_v2.Record> v2_1(boolean schemaValidate){
+        return new OrcidTranslator<org.orcid.jaxb.model.record_v2.Record>(SchemaVersion.V2_1,schemaValidate);
     }
 
     /**
      * @return a new v3.0rc1 OrcidTranslator
      */
-    public static OrcidTranslator<org.orcid.jaxb.model.v3.rc1.record.Record> v3_0RC1(){
-        return new OrcidTranslator<org.orcid.jaxb.model.v3.rc1.record.Record>(SchemaVersion.V3_0RC1);
+    public static OrcidTranslator<org.orcid.jaxb.model.v3.rc1.record.Record> v3_0RC1(boolean schemaValidate){
+        return new OrcidTranslator<org.orcid.jaxb.model.v3.rc1.record.Record>(SchemaVersion.V3_0RC1,schemaValidate);
     }
 
     /**
@@ -71,7 +71,7 @@ public class OrcidTranslator<T> {
      * marshaller and unmarshaler
      * 
      */
-    private OrcidTranslator(SchemaVersion location) {
+    private OrcidTranslator(SchemaVersion location,boolean schemaValidate) {
         mapper = new ObjectMapper();
         JaxbAnnotationModule module = new JaxbAnnotationModule();
         mapper.registerModule(module);
@@ -81,13 +81,13 @@ public class OrcidTranslator<T> {
             JAXBContext context = JAXBContext.newInstance(modelClass);
             SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             URL url = Resources.getResource(location.location);
-            Schema schema = sf.newSchema(url);
-
             unmarshaller = context.createUnmarshaller();
-            unmarshaller.setSchema(schema);
-
             marshaller = context.createMarshaller();
-            marshaller.setSchema(schema);
+            if (schemaValidate){
+                Schema schema = sf.newSchema(url);
+                unmarshaller.setSchema(schema);
+                marshaller.setSchema(schema);                
+            }
 
         } catch (JAXBException | SAXException e) {
             throw new RuntimeException("Unable to create jaxb marshaller/unmarshaller" + e);
