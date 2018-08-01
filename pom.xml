@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.orcid</groupId>
-	<artifactId>orcid-public-lib</artifactId>
-	<version>2.1</version>
+	<artifactId>orcid-conversion-lib</artifactId>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
-	<name>orcid-public-lib</name>
+	<name>orcid-conversion-lib</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -73,13 +73,15 @@
 							<archive>
 								<manifest>
 									<mainClass>
-										org.orcid.publiclib.App
+										org.orcid.conversionlib.App
 									</mainClass>
 								</manifest>
 							</archive>
 							<descriptorRefs>
 								<descriptorRef>jar-with-dependencies</descriptorRef>
 							</descriptorRefs>
+							<finalName>${project.artifactId}-${project.version}-full</finalName>
+        					<appendAssemblyId>false</appendAssemblyId>
 						</configuration>
 					</execution>
 				</executions>
