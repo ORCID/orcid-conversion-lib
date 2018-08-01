@@ -58,7 +58,7 @@ The top level class for v2.0 and v2.1 is ```org.orcid.jaxb.model.record_v2.Recor
 	
 ## Dependencies
 
-orcid-model depends on the following:
+orcid-model depends on the following, which should automatically be imported by maven if you add the orcid-model jar to your local repository:
 
     <dependency>
         <groupId>org.apache.commons</groupId>
@@ -88,26 +88,26 @@ orcid-model depends on the following:
     
 More recent versions of Java (9+) require you to explicitly include JAXB.  Like this:
 
-	    <dependency>
-	        <groupId>javax.xml.bind</groupId>
-	        <artifactId>jaxb-api</artifactId>
+    <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+    <version>2.3.0</version>
+	</dependency>
+    <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-impl</artifactId>
         <version>2.3.0</version>
-    	</dependency>
-        <dependency>
-	        <groupId>com.sun.xml.bind</groupId>
-	        <artifactId>jaxb-impl</artifactId>
-	        <version>2.3.0</version>
-    	</dependency>
-        <dependency>
-		    <groupId>com.sun.xml.bind</groupId>
-		    <artifactId>jaxb-core</artifactId>
-		    <version>2.3.0</version>
-		</dependency>
-		<dependency>
-		    <groupId>javax.activation</groupId>
-		    <artifactId>activation</artifactId>
-		    <version>1.1.1</version>
-		</dependency>
+	</dependency>
+    <dependency>
+	    <groupId>com.sun.xml.bind</groupId>
+	    <artifactId>jaxb-core</artifactId>
+	    <version>2.3.0</version>
+	</dependency>
+	<dependency>
+	    <groupId>javax.activation</groupId>
+	    <artifactId>activation</artifactId>
+	    <version>1.1.1</version>
+	</dependency>
 
 ## Notes on schema validation
 
