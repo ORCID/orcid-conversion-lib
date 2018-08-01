@@ -4,6 +4,8 @@ Simple application that takes an ORCID XML or JSON file and outputs the other ve
 
 Works with V2.0 and V2.1 (default) versions of the schema.
 
+If you wish to use the JAXB beans directly, [please use the orcid-model jar](https://github.com/ORCID/orcid-public-lib/raw/master/orcid-model/).  This contains just the model and none of the dependencies.  
+
 ## Usage
 
 - Make sure you have Java 1.8 or greater installed on your machine
@@ -33,7 +35,7 @@ Options:
 
 ## Model classes:
 
-This jar also includes a simple translation class to parse XML and JSON into JAXB annotated beans and contains the full ORCID 2.0/2.1 model as JAXB annotated beans.
+The executable jar also includes a simple translation class to parse XML and JSON into JAXB annotated beans and contains the full ORCID 2.0/2.1 model as JAXB annotated beans.
 However, as the jar contains all transitive dependencies, it is not advisable to use it as a dependency in your own projects.
 
 If you wish to use the JAXB beans directly, [please use the orcid-model jar](https://github.com/ORCID/orcid-public-lib/raw/master/orcid-model/).  This contains just the model and none of the dependencies.  

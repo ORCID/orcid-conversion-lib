@@ -55,6 +55,59 @@ The top level class for v2.0 and v2.1 is ```org.orcid.jaxb.model.record_v2.Recor
 	//write a JSON Record
     Writer writer = //some kind of string/file/outputstream writer;
 	mapper.writeValue(writer, record);
+	
+## Dependencies
+
+orcid-model depends on the following, which should automatically be imported by maven if you add the orcid-model jar to your local repository:
+
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.2</version>
+    </dependency>
+	<dependency>
+        <groupId>commons-lang</groupId>
+        <artifactId>commons-lang</artifactId>
+        <version>2.6</version>
+    </dependency>
+    <dependency>
+        <groupId>com.fasterxml.jackson.jaxrs</groupId>
+        <artifactId>jackson-jaxrs-json-provider</artifactId>
+        <version>2.9.3</version>
+    </dependency>
+    <dependency>
+        <groupId>io.swagger</groupId>
+        <artifactId>swagger-jersey-jaxrs</artifactId>
+        <version>1.5.16</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.1</version>
+    </dependency>
+    
+More recent versions of Java (9+) require you to explicitly include JAXB.  Like this:
+
+    <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+    <version>2.3.0</version>
+	</dependency>
+    <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-impl</artifactId>
+        <version>2.3.0</version>
+	</dependency>
+    <dependency>
+	    <groupId>com.sun.xml.bind</groupId>
+	    <artifactId>jaxb-core</artifactId>
+	    <version>2.3.0</version>
+	</dependency>
+	<dependency>
+	    <groupId>javax.activation</groupId>
+	    <artifactId>activation</artifactId>
+	    <version>1.1.1</version>
+	</dependency>
 
 ## Notes on schema validation
 
