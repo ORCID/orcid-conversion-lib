@@ -1,0 +1,2347 @@
+{
+  "orcid-identifier": {
+    "uri": "https://orcid.org/0000-0003-0902-4386",
+    "path": "0000-0003-0902-4386",
+    "host": "orcid.org"
+  },
+  "preferences": {
+    "locale": "en"
+  },
+  "history": {
+    "creation-method": "WEBSITE",
+    "completion-date": {
+      "value": 1358510968451
+    },
+    "submission-date": {
+      "value": 1358510968451
+    },
+    "last-modified-date": {
+      "value": 1530348487363
+    },
+    "claimed": true,
+    "source": null,
+    "deactivation-date": null,
+    "verified-email": true,
+    "verified-primary-email": true
+  },
+  "person": {
+    "last-modified-date": {
+      "value": 1518447865389
+    },
+    "name": {
+      "created-date": {
+        "value": 1460763341154
+      },
+      "last-modified-date": {
+        "value": 1518447800402
+      },
+      "given-names": {
+        "value": "Tom"
+      },
+      "family-name": {
+        "value": "Demeranville"
+      },
+      "credit-name": {
+        "value": "Tom 'Amazing' Demeranville"
+      },
+      "source": null,
+      "visibility": "public",
+      "path": "0000-0003-0902-4386"
+    },
+    "other-names": {
+      "last-modified-date": {
+        "value": 1518447836736
+      },
+      "other-name": [
+        {
+          "created-date": {
+            "value": 1461581367485
+          },
+          "last-modified-date": {
+            "value": 1518447836736
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0003-0902-4386",
+              "path": "0000-0003-0902-4386",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Tom 'Amazing' Demeranville"
+            }
+          },
+          "content": "Thomas Demeranville",
+          "visibility": "public",
+          "path": "/0000-0003-0902-4386/other-names/726128",
+          "put-code": 726128,
+          "display-index": 1
+        }
+      ],
+      "path": "/0000-0003-0902-4386/other-names"
+    },
+    "biography": {
+      "created-date": {
+        "value": 1460763341157
+      },
+      "last-modified-date": {
+        "value": 1526479411741
+      },
+      "content": "ORCID Technology advocate",
+      "visibility": "public",
+      "path": "/0000-0003-0902-4386/biography"
+    },
+    "researcher-urls": {
+      "last-modified-date": {
+        "value": 1518447850482
+      },
+      "researcher-url": [
+        {
+          "created-date": {
+            "value": 1461581367494
+          },
+          "last-modified-date": {
+            "value": 1518447850482
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0003-0902-4386",
+              "path": "0000-0003-0902-4386",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Tom 'Amazing' Demeranville"
+            }
+          },
+          "url-name": "Blog",
+          "url": {
+            "value": "http://demeranville.com"
+          },
+          "visibility": "public",
+          "path": "/0000-0003-0902-4386/researcher-urls/719084",
+          "put-code": 719084,
+          "display-index": 2
+        },
+        {
+          "created-date": {
+            "value": 1461581367497
+          },
+          "last-modified-date": {
+            "value": 1518447850482
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0003-0902-4386",
+              "path": "0000-0003-0902-4386",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Tom 'Amazing' Demeranville"
+            }
+          },
+          "url-name": "Project THOR",
+          "url": {
+            "value": "http://project-thor.eu"
+          },
+          "visibility": "public",
+          "path": "/0000-0003-0902-4386/researcher-urls/719085",
+          "put-code": 719085,
+          "display-index": 1
+        }
+      ],
+      "path": "/0000-0003-0902-4386/researcher-urls"
+    },
+    "emails": {
+      "last-modified-date": null,
+      "email": [],
+      "path": "/0000-0003-0902-4386/email"
+    },
+    "addresses": {
+      "last-modified-date": {
+        "value": 1518447841049
+      },
+      "address": [
+        {
+          "created-date": {
+            "value": 1453659223747
+          },
+          "last-modified-date": {
+            "value": 1518447841039
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0003-0902-4386",
+              "path": "0000-0003-0902-4386",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Tom 'Amazing' Demeranville"
+            }
+          },
+          "country": {
+            "value": "GB"
+          },
+          "visibility": "public",
+          "path": "/0000-0003-0902-4386/address/120317",
+          "put-code": 120317,
+          "display-index": 2
+        },
+        {
+          "created-date": {
+            "value": 1482416338403
+          },
+          "last-modified-date": {
+            "value": 1518447841049
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0003-0902-4386",
+              "path": "0000-0003-0902-4386",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Tom 'Amazing' Demeranville"
+            }
+          },
+          "country": {
+            "value": "AF"
+          },
+          "visibility": "public",
+          "path": "/0000-0003-0902-4386/address/598118",
+          "put-code": 598118,
+          "display-index": 1
+        }
+      ],
+      "path": "/0000-0003-0902-4386/address"
+    },
+    "keywords": {
+      "last-modified-date": {
+        "value": 1518447844495
+      },
+      "keyword": [
+        {
+          "created-date": {
+            "value": 1518447656574
+          },
+          "last-modified-date": {
+            "value": 1518447844495
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0003-0902-4386",
+              "path": "0000-0003-0902-4386",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Tom 'Amazing' Demeranville"
+            }
+          },
+          "content": "awesome",
+          "visibility": "public",
+          "path": "/0000-0003-0902-4386/keywords/898028",
+          "put-code": 898028,
+          "display-index": 1
+        }
+      ],
+      "path": "/0000-0003-0902-4386/keywords"
+    },
+    "external-identifiers": {
+      "last-modified-date": {
+        "value": 1518447865389
+      },
+      "external-identifier": [
+        {
+          "created-date": {
+            "value": 1509530588689
+          },
+          "last-modified-date": {
+            "value": 1518447865389
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0003-0412-1857",
+              "path": "0000-0003-0412-1857",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "ISNI2ORCID search and link"
+            }
+          },
+          "external-id-type": "ISNI",
+          "external-id-value": "0000000001572781",
+          "external-id-url": {
+            "value": "http://isni.org/isni/0000000001572781"
+          },
+          "external-id-relationship": "self",
+          "visibility": "public",
+          "path": "/0000-0003-0902-4386/external-identifiers/849710",
+          "put-code": 849710,
+          "display-index": 1
+        }
+      ],
+      "path": "/0000-0003-0902-4386/external-identifiers"
+    },
+    "path": "/0000-0003-0902-4386/person"
+  },
+  "activities-summary": {
+    "last-modified-date": {
+      "value": 1512751069202
+    },
+    "distinctions": {
+      "last-modified-date": null,
+      "affiliation-group": [],
+      "path": "/0000-0003-0902-4386/distinctions"
+    },
+    "educations": {
+      "last-modified-date": {
+        "value": 1504877479987
+      },
+      "affiliation-group": [
+        {
+          "last-modified-date": {
+            "value": 1504877479987
+          },
+          "external-ids": {
+            "external-id": []
+          },
+          "summaries": [
+            {
+              "education-summary": {
+                "created-date": {
+                  "value": 1435248072718
+                },
+                "last-modified-date": {
+                  "value": 1504877479987
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-0902-4386",
+                    "path": "0000-0003-0902-4386",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Tom 'Amazing' Demeranville"
+                  }
+                },
+                "put-code": 990546,
+                "department-name": "Computer Science",
+                "role-title": "1st class with honours",
+                "start-date": {
+                  "year": {
+                    "value": "1999"
+                  },
+                  "month": null,
+                  "day": null
+                },
+                "end-date": {
+                  "year": {
+                    "value": "2003"
+                  },
+                  "month": null,
+                  "day": null
+                },
+                "organization": {
+                  "name": "Open University",
+                  "address": {
+                    "city": "Milton Keynes",
+                    "region": "Milton Keynes",
+                    "country": "GB"
+                  },
+                  "disambiguated-organization": {
+                    "disambiguated-organization-identifier": "5488",
+                    "disambiguation-source": "RINGGOLD"
+                  }
+                },
+                "external-ids": null,
+                "display-index": "-1",
+                "visibility": "public",
+                "path": "/0000-0003-0902-4386/education/990546"
+              }
+            }
+          ]
+        }
+      ],
+      "path": "/0000-0003-0902-4386/educations"
+    },
+    "employments": {
+      "last-modified-date": {
+        "value": 1505747611536
+      },
+      "affiliation-group": [
+        {
+          "last-modified-date": {
+            "value": 1505747611536
+          },
+          "external-ids": {
+            "external-id": []
+          },
+          "summaries": [
+            {
+              "employment-summary": {
+                "created-date": {
+                  "value": 1504217346455
+                },
+                "last-modified-date": {
+                  "value": 1505747611536
+                },
+                "source": {
+                  "source-orcid": null,
+                  "source-client-id": {
+                    "uri": "https://orcid.org/client/0000-0001-8203-3567",
+                    "path": "0000-0001-8203-3567",
+                    "host": "orcid.org"
+                  },
+                  "source-name": {
+                    "value": "ORCID"
+                  }
+                },
+                "put-code": 4558755,
+                "department-name": null,
+                "role-title": "Senior Technical Officer, THOR Project",
+                "start-date": {
+                  "year": {
+                    "value": "2015"
+                  },
+                  "month": {
+                    "value": "06"
+                  },
+                  "day": {
+                    "value": "10"
+                  }
+                },
+                "end-date": null,
+                "organization": {
+                  "name": "ORCID",
+                  "address": {
+                    "city": "Bath",
+                    "region": null,
+                    "country": "GB"
+                  },
+                  "disambiguated-organization": null
+                },
+                "external-ids": null,
+                "display-index": "-1",
+                "visibility": "public",
+                "path": "/0000-0003-0902-4386/employment/4558755"
+              }
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1435248181713
+          },
+          "external-ids": {
+            "external-id": []
+          },
+          "summaries": [
+            {
+              "employment-summary": {
+                "created-date": {
+                  "value": 1435247860252
+                },
+                "last-modified-date": {
+                  "value": 1435248181713
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-0902-4386",
+                    "path": "0000-0003-0902-4386",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Tom 'Amazing' Demeranville"
+                  }
+                },
+                "put-code": 990534,
+                "department-name": "Delivery",
+                "role-title": "Technical Lead",
+                "start-date": {
+                  "year": {
+                    "value": "2014"
+                  },
+                  "month": {
+                    "value": "12"
+                  },
+                  "day": null
+                },
+                "end-date": {
+                  "year": {
+                    "value": "2015"
+                  },
+                  "month": {
+                    "value": "06"
+                  },
+                  "day": null
+                },
+                "organization": {
+                  "name": "IPL",
+                  "address": {
+                    "city": "Bath",
+                    "region": null,
+                    "country": "GB"
+                  },
+                  "disambiguated-organization": null
+                },
+                "external-ids": null,
+                "display-index": "-1",
+                "visibility": "public",
+                "path": "/0000-0003-0902-4386/employment/990534"
+              }
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1435248182295
+          },
+          "external-ids": {
+            "external-id": []
+          },
+          "summaries": [
+            {
+              "employment-summary": {
+                "created-date": {
+                  "value": 1435247923783
+                },
+                "last-modified-date": {
+                  "value": 1435248182295
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-0902-4386",
+                    "path": "0000-0003-0902-4386",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Tom 'Amazing' Demeranville"
+                  }
+                },
+                "put-code": 990536,
+                "department-name": "ODIN Project",
+                "role-title": "Technical Lead",
+                "start-date": {
+                  "year": {
+                    "value": "2013"
+                  },
+                  "month": {
+                    "value": "02"
+                  },
+                  "day": null
+                },
+                "end-date": {
+                  "year": {
+                    "value": "2014"
+                  },
+                  "month": {
+                    "value": "12"
+                  },
+                  "day": null
+                },
+                "organization": {
+                  "name": "British Library",
+                  "address": {
+                    "city": "London",
+                    "region": null,
+                    "country": "GB"
+                  },
+                  "disambiguated-organization": {
+                    "disambiguated-organization-identifier": "4925",
+                    "disambiguation-source": "RINGGOLD"
+                  }
+                },
+                "external-ids": null,
+                "display-index": "-1",
+                "visibility": "public",
+                "path": "/0000-0003-0902-4386/employment/990536"
+              }
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1435248184090
+          },
+          "external-ids": {
+            "external-id": []
+          },
+          "summaries": [
+            {
+              "employment-summary": {
+                "created-date": {
+                  "value": 1435247976562
+                },
+                "last-modified-date": {
+                  "value": 1435248184090
+                },
+                "source": {
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0003-0902-4386",
+                    "path": "0000-0003-0902-4386",
+                    "host": "orcid.org"
+                  },
+                  "source-client-id": null,
+                  "source-name": {
+                    "value": "Tom 'Amazing' Demeranville"
+                  }
+                },
+                "put-code": 990539,
+                "department-name": "Athens",
+                "role-title": "Senior Software Engineer",
+                "start-date": {
+                  "year": {
+                    "value": "2005"
+                  },
+                  "month": {
+                    "value": "01"
+                  },
+                  "day": null
+                },
+                "end-date": {
+                  "year": {
+                    "value": "2013"
+                  },
+                  "month": {
+                    "value": "02"
+                  },
+                  "day": null
+                },
+                "organization": {
+                  "name": "Eduserv Athens",
+                  "address": {
+                    "city": "Bath",
+                    "region": "Bath and North East Somer",
+                    "country": "GB"
+                  },
+                  "disambiguated-organization": {
+                    "disambiguated-organization-identifier": "226102",
+                    "disambiguation-source": "RINGGOLD"
+                  }
+                },
+                "external-ids": null,
+                "display-index": "-1",
+                "visibility": "public",
+                "path": "/0000-0003-0902-4386/employment/990539"
+              }
+            }
+          ]
+        }
+      ],
+      "path": "/0000-0003-0902-4386/employments"
+    },
+    "fundings": {
+      "last-modified-date": {
+        "value": 1509530588776
+      },
+      "group": [
+        {
+          "last-modified-date": {
+            "value": 1509530588776
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "grant_number",
+                "external-id-value": "H2020-EU.1.4.1.3.",
+                "external-id-normalized": null,
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "http://cordis.europa.eu/project/rcn/194927_en.html"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "funding-summary": [
+            {
+              "created-date": {
+                "value": 1449580576370
+              },
+              "last-modified-date": {
+                "value": 1509530588776
+              },
+              "source": {
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0003-0902-4386",
+                  "path": "0000-0003-0902-4386",
+                  "host": "orcid.org"
+                },
+                "source-client-id": null,
+                "source-name": {
+                  "value": "Tom 'Amazing' Demeranville"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "THOR - Technical and Human Infrastructure for Open Research"
+                },
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "grant_number",
+                    "external-id-value": "H2020-EU.1.4.1.3.",
+                    "external-id-normalized": null,
+                    "external-id-normalized-error": null,
+                    "external-id-url": {
+                      "value": "http://cordis.europa.eu/project/rcn/194927_en.html"
+                    },
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "grant",
+              "start-date": {
+                "year": {
+                  "value": "2015"
+                },
+                "month": {
+                  "value": "06"
+                },
+                "day": null
+              },
+              "end-date": {
+                "year": {
+                  "value": "2017"
+                },
+                "month": {
+                  "value": "11"
+                },
+                "day": null
+              },
+              "organization": {
+                "name": "European Commission",
+                "address": {
+                  "city": "Brussels",
+                  "region": null,
+                  "country": "BE"
+                },
+                "disambiguated-organization": {
+                  "disambiguated-organization-identifier": "http://dx.doi.org/10.13039/501100004964",
+                  "disambiguation-source": "FUNDREF"
+                }
+              },
+              "visibility": "public",
+              "put-code": 133362,
+              "path": "/0000-0003-0902-4386/funding/133362",
+              "display-index": "0"
+            }
+          ]
+        }
+      ],
+      "path": "/0000-0003-0902-4386/fundings"
+    },
+    "invited-positions": {
+      "last-modified-date": null,
+      "affiliation-group": [],
+      "path": "/0000-0003-0902-4386/invited-positions"
+    },
+    "memberships": {
+      "last-modified-date": null,
+      "affiliation-group": [],
+      "path": "/0000-0003-0902-4386/memberships"
+    },
+    "peer-reviews": {
+      "last-modified-date": null,
+      "group": [],
+      "path": "/0000-0003-0902-4386/peer-reviews"
+    },
+    "qualifications": {
+      "last-modified-date": null,
+      "affiliation-group": [],
+      "path": "/0000-0003-0902-4386/qualifications"
+    },
+    "research-resources": {
+      "last-modified-date": null,
+      "group": [],
+      "path": "/0000-0003-0902-4386/research-resources"
+    },
+    "services": {
+      "last-modified-date": null,
+      "affiliation-group": [],
+      "path": "/0000-0003-0902-4386/services"
+    },
+    "works": {
+      "last-modified-date": {
+        "value": 1512751069202
+      },
+      "group": [
+        {
+          "last-modified-date": {
+            "value": 1512751069202
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1016/j.procs.2017.03.040",
+                "external-id-normalized": {
+                  "value": "10.1016/j.procs.2017.03.040",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 31274082,
+              "created-date": {
+                "value": 1490197050333
+              },
+              "last-modified-date": {
+                "value": 1512751069202
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0002-3054-1567",
+                  "path": "0000-0002-3054-1567",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "CrossRef Metadata Search"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "Towards a CERIF-Orcid API Adaptor: A Progress Report"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.1016/j.procs.2017.03.040",
+                    "external-id-normalized": {
+                      "value": "10.1016/j.procs.2017.03.040",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "journal-article",
+              "journal-title": {
+                "value": "Procedia Computer Science"
+              },
+              "publication-date": {
+                "year": {
+                  "value": "2017"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/31274082",
+              "display-index": "4"
+            },
+            {
+              "put-code": 39452355,
+              "created-date": {
+                "value": 1512750908107
+              },
+              "last-modified-date": {
+                "value": 1512751069202
+              },
+              "source": {
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0003-0902-4386",
+                  "path": "0000-0003-0902-4386",
+                  "host": "orcid.org"
+                },
+                "source-client-id": null,
+                "source-name": {
+                  "value": "Tom 'Amazing' Demeranville"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "TEST"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "http://doi.org/10.1016/J.PROCS.2017.03.040",
+                    "external-id-normalized": {
+                      "value": "10.1016/j.procs.2017.03.040",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": {
+                      "value": "http://doi.org/10.1016/J.PROCS.2017.03.040"
+                    },
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "journal-article",
+              "journal-title": null,
+              "publication-date": null,
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/39452355",
+              "display-index": "1"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1490281086318
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.3390/publications4040030",
+                "external-id-normalized": {
+                  "value": "10.3390/publications4040030",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 31274084,
+              "created-date": {
+                "value": 1490197057916
+              },
+              "last-modified-date": {
+                "value": 1490281086318
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0002-3054-1567",
+                  "path": "0000-0002-3054-1567",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "CrossRef Metadata Search"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "Open Access in Context: Connecting Authors, Publications and Workflows Using ORCID Identifiers"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.3390/publications4040030",
+                    "external-id-normalized": {
+                      "value": "10.3390/publications4040030",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "journal-article",
+              "journal-title": {
+                "value": "Publications"
+              },
+              "publication-date": {
+                "year": {
+                  "value": "2016"
+                },
+                "month": {
+                  "value": "09"
+                },
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/31274084",
+              "display-index": "0"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1487950373708
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.6084/M9.FIGSHARE.4134027.V1",
+                "external-id-normalized": {
+                  "value": "10.6084/m9.figshare.4134027.v1",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 30033663,
+              "created-date": {
+                "value": 1486064873752
+              },
+              "last-modified-date": {
+                "value": 1487950373708
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0001-8099-6984",
+                  "path": "0000-0001-8099-6984",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "DataCite"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "ORCID Public Data File 2016"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.6084/M9.FIGSHARE.4134027.V1",
+                    "external-id-normalized": {
+                      "value": "10.6084/m9.figshare.4134027.v1",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "data-set",
+              "journal-title": {
+                "value": "Figshare"
+              },
+              "publication-date": {
+                "year": {
+                  "value": "2016"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/30033663",
+              "display-index": "0"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1487950368782
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.6084/M9.FIGSHARE.3479141.V1",
+                "external-id-normalized": {
+                  "value": "10.6084/m9.figshare.3479141.v1",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 30033650,
+              "created-date": {
+                "value": 1486064860927
+              },
+              "last-modified-date": {
+                "value": 1487950368782
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0001-8099-6984",
+                  "path": "0000-0001-8099-6984",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "DataCite"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "Organisation Identifiers - Minimum viable product requirements"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.6084/M9.FIGSHARE.3479141.V1",
+                    "external-id-normalized": {
+                      "value": "10.6084/m9.figshare.3479141.v1",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "data-set",
+              "journal-title": {
+                "value": "Figshare"
+              },
+              "publication-date": {
+                "year": {
+                  "value": "2016"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/30033650",
+              "display-index": "0"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1485795968268
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.5438/4716",
+                "external-id-normalized": {
+                  "value": "10.5438/4716",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 28953231,
+              "created-date": {
+                "value": 1482232068353
+              },
+              "last-modified-date": {
+                "value": 1485795968268
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0001-8099-6984",
+                  "path": "0000-0001-8099-6984",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "DataCite"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "Organisation identifiers: current provider survey"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.5438/4716",
+                    "external-id-normalized": {
+                      "value": "10.5438/4716",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "other",
+              "journal-title": {
+                "value": "ORCID"
+              },
+              "publication-date": {
+                "year": {
+                  "value": "2016"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/28953231",
+              "display-index": "0"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1487950353223
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.6084/M9.FIGSHARE.4216323.V2",
+                "external-id-normalized": {
+                  "value": "10.6084/m9.figshare.4216323.v2",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 30033721,
+              "created-date": {
+                "value": 1486064980265
+              },
+              "last-modified-date": {
+                "value": 1487950353223
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0001-8099-6984",
+                  "path": "0000-0001-8099-6984",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "DataCite"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "Project Identifiers"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.6084/M9.FIGSHARE.4216323.V2",
+                    "external-id-normalized": {
+                      "value": "10.6084/m9.figshare.4216323.v2",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "other",
+              "journal-title": {
+                "value": "Figshare"
+              },
+              "publication-date": {
+                "year": {
+                  "value": "2016"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/30033721",
+              "display-index": "0"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1482232449080
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.5281/ZENODO.48228",
+                "external-id-normalized": {
+                  "value": "10.5281/zenodo.48228",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 23239358,
+              "created-date": {
+                "value": 1459416226870
+              },
+              "last-modified-date": {
+                "value": 1482232449080
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0001-8099-6984",
+                  "path": "0000-0001-8099-6984",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "DataCite"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "THOR Communications Plan"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.5281/ZENODO.48228",
+                    "external-id-normalized": {
+                      "value": "10.5281/zenodo.48228",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "other",
+              "journal-title": {
+                "value": "Zenodo"
+              },
+              "publication-date": {
+                "year": {
+                  "value": "2016"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/23239358",
+              "display-index": "0"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1482232449080
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.5281/ZENODO.48705",
+                "external-id-normalized": {
+                  "value": "10.5281/zenodo.48705",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 24798864,
+              "created-date": {
+                "value": 1466168070578
+              },
+              "last-modified-date": {
+                "value": 1482232449080
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0001-8099-6984",
+                  "path": "0000-0001-8099-6984",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "DataCite"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "THOR: Conceptual Model of Persistent Identifier Linking"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.5281/ZENODO.48705",
+                    "external-id-normalized": {
+                      "value": "10.5281/zenodo.48705",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "other",
+              "journal-title": {
+                "value": "Zenodo"
+              },
+              "publication-date": {
+                "year": {
+                  "value": "2016"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/24798864",
+              "display-index": "0"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1482232449080
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.5281/ZENODO.46761",
+                "external-id-normalized": {
+                  "value": "10.5281/zenodo.46761",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 25382907,
+              "created-date": {
+                "value": 1468427369403
+              },
+              "last-modified-date": {
+                "value": 1482232449080
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0001-8099-6984",
+                  "path": "0000-0001-8099-6984",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "DataCite"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "THOR: Metrics and Tools"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.5281/ZENODO.46761",
+                    "external-id-normalized": {
+                      "value": "10.5281/zenodo.46761",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "other",
+              "journal-title": {
+                "value": "Zenodo"
+              },
+              "publication-date": {
+                "year": {
+                  "value": "2016"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/25382907",
+              "display-index": "0"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1487950356224
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.5438/7885",
+                "external-id-normalized": {
+                  "value": "10.5438/7885",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 30033723,
+              "created-date": {
+                "value": 1486064983697
+              },
+              "last-modified-date": {
+                "value": 1487950356224
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0001-8099-6984",
+                  "path": "0000-0001-8099-6984",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "DataCite"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "Technical Considerations for an Organization Identifier Registry"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.5438/7885",
+                    "external-id-normalized": {
+                      "value": "10.5438/7885",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "other",
+              "journal-title": {
+                "value": "ORCID"
+              },
+              "publication-date": {
+                "year": {
+                  "value": "2016"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/30033723",
+              "display-index": "0"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1482232449080
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.6084/m9.figshare.1598096",
+                "external-id-normalized": {
+                  "value": "10.6084/m9.figshare.1598096",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 20140994,
+              "created-date": {
+                "value": 1447169741596
+              },
+              "last-modified-date": {
+                "value": 1482232449080
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0001-9892-9368",
+                  "path": "0000-0001-9892-9368",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "figshare"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "ORCID and CERIF"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.6084/m9.figshare.1598096",
+                    "external-id-normalized": {
+                      "value": "10.6084/m9.figshare.1598096",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "other",
+              "journal-title": null,
+              "publication-date": {
+                "year": {
+                  "value": "2015"
+                },
+                "month": {
+                  "value": "11"
+                },
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/20140994",
+              "display-index": "0"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1482232449080
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.5281/ZENODO.30799",
+                "external-id-normalized": {
+                  "value": "10.5281/zenodo.30799",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 23239361,
+              "created-date": {
+                "value": 1459416241937
+              },
+              "last-modified-date": {
+                "value": 1482232449080
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0001-8099-6984",
+                  "path": "0000-0001-8099-6984",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "DataCite"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "D2.1: Artefact, Contributor, and Organisation Relationship Data Schema"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.5281/ZENODO.30799",
+                    "external-id-normalized": {
+                      "value": "10.5281/zenodo.30799",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "other",
+              "journal-title": {
+                "value": "Zenodo"
+              },
+              "publication-date": {
+                "year": {
+                  "value": "2015"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/23239361",
+              "display-index": "0"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1482232449080
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.6084/M9.FIGSHARE.1373669",
+                "external-id-normalized": {
+                  "value": "10.6084/m9.figshare.1373669",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 17080227,
+              "created-date": {
+                "value": 1435247580221
+              },
+              "last-modified-date": {
+                "value": 1482232449080
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0001-8099-6984",
+                  "path": "0000-0001-8099-6984",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "DataCite"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "D4.2: Workflow for interoperability"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.6084/M9.FIGSHARE.1373669",
+                    "external-id-normalized": {
+                      "value": "10.6084/m9.figshare.1373669",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "data-set",
+              "journal-title": null,
+              "publication-date": {
+                "year": {
+                  "value": "2015"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/17080227",
+              "display-index": "3"
+            },
+            {
+              "put-code": 17080287,
+              "created-date": {
+                "value": 1435233269117
+              },
+              "last-modified-date": {
+                "value": 1482232449080
+              },
+              "source": {
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0003-0902-4386",
+                  "path": "0000-0003-0902-4386",
+                  "host": "orcid.org"
+                },
+                "source-client-id": null,
+                "source-name": {
+                  "value": "Tom 'Amazing' Demeranville"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "D4.2: Workflow for interoperability"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.6084/M9.FIGSHARE.1373669",
+                    "external-id-normalized": {
+                      "value": "10.6084/m9.figshare.1373669",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "report",
+              "journal-title": null,
+              "publication-date": {
+                "year": {
+                  "value": "2015"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/17080287",
+              "display-index": "1"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1482232449080
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.6084/M9.FIGSHARE.1582705.V1",
+                "external-id-normalized": {
+                  "value": "10.6084/m9.figshare.1582705.v1",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 23239357,
+              "created-date": {
+                "value": 1459416226538
+              },
+              "last-modified-date": {
+                "value": 1482232449080
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0001-8099-6984",
+                  "path": "0000-0001-8099-6984",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "DataCite"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "ORCID Public Data File 2015"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.6084/M9.FIGSHARE.1582705.V1",
+                    "external-id-normalized": {
+                      "value": "10.6084/m9.figshare.1582705.v1",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "data-set",
+              "journal-title": {
+                "value": "Figshare"
+              },
+              "publication-date": {
+                "year": {
+                  "value": "2015"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/23239357",
+              "display-index": "0"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1490280869439
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.5438/6423",
+                "external-id-normalized": {
+                  "value": "10.5438/6423",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 30033172,
+              "created-date": {
+                "value": 1486063417934
+              },
+              "last-modified-date": {
+                "value": 1490280869439
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0001-8099-6984",
+                  "path": "0000-0001-8099-6984",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "DataCite"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "Technical and Human Infrastructure for Open Research (THOR)"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.5438/6423",
+                    "external-id-normalized": {
+                      "value": "10.5438/6423",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "other",
+              "journal-title": {
+                "value": "DataCite"
+              },
+              "publication-date": {
+                "year": {
+                  "value": "2015"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/30033172",
+              "display-index": "0"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1482232449080
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.6084/M9.FIGSHARE.824317",
+                "external-id-normalized": {
+                  "value": "10.6084/m9.figshare.824317",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 18003936,
+              "created-date": {
+                "value": 1439996639727
+              },
+              "last-modified-date": {
+                "value": 1482232449080
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0001-8099-6984",
+                  "path": "0000-0001-8099-6984",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "DataCite"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "D3.1 Humanities and Social Science Proof of Concept"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.6084/M9.FIGSHARE.824317",
+                    "external-id-normalized": {
+                      "value": "10.6084/m9.figshare.824317",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "data-set",
+              "journal-title": null,
+              "publication-date": {
+                "year": {
+                  "value": "2013"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/18003936",
+              "display-index": "0"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1482232449080
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.5281/ZENODO.30030",
+                "external-id-normalized": {
+                  "value": "10.5281/zenodo.30030",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 18875588,
+              "created-date": {
+                "value": 1443708906024
+              },
+              "last-modified-date": {
+                "value": 1482232449080
+              },
+              "source": {
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0001-8099-6984",
+                  "path": "0000-0001-8099-6984",
+                  "host": "orcid.org"
+                },
+                "source-name": {
+                  "value": "DataCite"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "ORCID and DATACITE Interoperability Network (ODIN)"
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "doi",
+                    "external-id-value": "10.5281/ZENODO.30030",
+                    "external-id-normalized": {
+                      "value": "10.5281/zenodo.30030",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "other",
+              "journal-title": null,
+              "publication-date": {
+                "year": {
+                  "value": "2012"
+                },
+                "month": null,
+                "day": null,
+                "media-type": null
+              },
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/18875588",
+              "display-index": "0"
+            }
+          ]
+        },
+        {
+          "last-modified-date": {
+            "value": 1509974127036
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "agr",
+                "external-id-value": "dsfdad",
+                "external-id-normalized": {
+                  "value": "dsfdad",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "pdb",
+                "external-id-value": "pdb-value-self",
+                "external-id-normalized": {
+                  "value": "pdb-value-self",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "http://identifiers.org/pdb/pdb-value-self"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "cit",
+                "external-id-value": "cite-self",
+                "external-id-normalized": {
+                  "value": "cite-self",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "work-summary": [
+            {
+              "put-code": 27365906,
+              "created-date": {
+                "value": 1476364527027
+              },
+              "last-modified-date": {
+                "value": 1509974127036
+              },
+              "source": {
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0003-0902-4386",
+                  "path": "0000-0003-0902-4386",
+                  "host": "orcid.org"
+                },
+                "source-client-id": null,
+                "source-name": {
+                  "value": "Tom 'Amazing' Demeranville"
+                }
+              },
+              "title": {
+                "title": {
+                  "value": "PDB, \"TEST\""
+                },
+                "subtitle": null,
+                "translated-title": null
+              },
+              "external-ids": {
+                "external-id": [
+                  {
+                    "external-id-type": "pdb",
+                    "external-id-value": "pdb-value-self",
+                    "external-id-normalized": {
+                      "value": "pdb-value-self",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": {
+                      "value": "http://identifiers.org/pdb/pdb-value-self"
+                    },
+                    "external-id-relationship": "self"
+                  },
+                  {
+                    "external-id-type": "cit",
+                    "external-id-value": "cite-self",
+                    "external-id-normalized": {
+                      "value": "cite-self",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  },
+                  {
+                    "external-id-type": "agr",
+                    "external-id-value": "dsfdad",
+                    "external-id-normalized": {
+                      "value": "dsfdad",
+                      "transient": true
+                    },
+                    "external-id-normalized-error": null,
+                    "external-id-url": null,
+                    "external-id-relationship": "self"
+                  }
+                ]
+              },
+              "type": "journal-article",
+              "journal-title": null,
+              "publication-date": null,
+              "visibility": "public",
+              "path": "/0000-0003-0902-4386/work/27365906",
+              "display-index": "1"
+            }
+          ]
+        }
+      ],
+      "path": "/0000-0003-0902-4386/works"
+    },
+    "path": "/0000-0003-0902-4386/activities"
+  },
+  "path": "/0000-0003-0902-4386"
+}

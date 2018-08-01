@@ -1,6 +1,6 @@
 # ORCID MODEL
 
-The [orcid-model-2.1.jar](https://github.com/ORCID/orcid-public-lib/raw/master/orcid-model/orcid-model-2.1.jar) contains the Java JAXB model that is used by the ORCID registry.  It enables translation between XML, JSON and Java Beans.  It can be used to quickly put together a Java ORCID client.
+The [orcid-model-2.1.jar](https://github.com/ORCID/orcid-conversion-lib/raw/master/orcid-model/orcid-model-2.1.jar) contains the Java JAXB model that is used by the ORCID registry.  It enables translation between XML, JSON and Java Beans.  It can be used to quickly put together a Java ORCID client.
 
 The top level class for v2.0 and v2.1 is ```org.orcid.jaxb.model.record_v2.Record```.  Other models (e.g. Works) can also be created/unmarshalled/marshalled as required, see the other ```org.orcid.jaxb.model.*```.
 
@@ -10,7 +10,7 @@ The top level class for v2.0 and v2.1 is ```org.orcid.jaxb.model.record_v2.Recor
 | v2.1 | record_2.1/record-2.1.xsd | org.orcid.jaxb.model.record_v2.Record |
 | v3.0rc1 | record_3.0_rc1/record-3.0_rc1.xsd | org.orcid.jaxb.model.record_v2.Record |
 
- For more examples, please see the [OrcidTranslator](https://github.com/ORCID/orcid-public-lib/blob/master/src/main/java/org/orcid/publiclib/OrcidTranslator.java) demonstrates how to serialize and deserialize XML and Java using JAXB.
+ For more examples, please see the [OrcidTranslator](https://github.com/ORCID/orcid-conversion-lib/blob/master/src/main/java/org/orcid/conversionlib/OrcidTranslator.java) demonstrates how to serialize and deserialize XML and Java using JAXB.
 
 ## XML v2.1 Example
 
