@@ -56,6 +56,14 @@ The top level class for v2.0 and v2.1 is ```org.orcid.jaxb.model.record_v2.Recor
     Writer writer = //some kind of string/file/outputstream writer;
 	mapper.writeValue(writer, record);
 	
+## Maven
+
+You will have to add the jar to your local repository to use it (it's not on maven central).  The details are:
+
+	<groupId>org.orcid</groupId>
+    <artifactId>orcid-model</artifactId>
+    <version>1.1.5-SNAPSHOT</version>
+
 ## Dependencies
 
 orcid-model depends on the following, which should automatically be imported by maven if you add the orcid-model jar to your local repository:
