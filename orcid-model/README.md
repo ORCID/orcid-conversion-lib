@@ -120,3 +120,7 @@ More recent versions of Java (9+) require you to explicitly include JAXB.  Like 
 ## Notes on schema validation
 
 While we strive to ensure records returned by the API are schema valid, this is not always the case.  This is mainly due to new rules and requirements being introduced over time that earlier versions of the schema did not enforce.  We are actively addressing these issues as they appear.  We advise you do not use schema validation unless absolutely necessary. 
+
+## Source
+
+The source for this jar is at https://github.com/ORCID/ORCID-Source/tree/master/orcid-model .  Note the current source may not exactly match this release version.
