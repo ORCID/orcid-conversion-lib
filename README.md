@@ -4,12 +4,12 @@ Simple application that takes an ORCID XML or JSON file and outputs the other ve
 
 Works with V2.0 and V2.1 (default) versions of the schema.
 
-If you wish to use the JAXB beans directly, [please use the orcid-model jar](https://github.com/ORCID/orcid-conversion-lib/raw/master/orcid-model/).  This contains just the model and none of the dependencies.  
+If you wish to use the JAXB beans directly, please use [orcid-model.jar](https://github.com/ORCID/orcid-conversion-lib/raw/master/orcid-model/) as it contains just the model and none of the dependencies.  
 
 ## Usage
 
 - Make sure you have Java 1.8 or greater installed on your machine
-- Download the [executable jar](https://github.com/ORCID/orcid-conversion-lib/raw/master/target/orcid-conversion-lib-0.0.1-full.jar) and execute: ```java -jar orcid-conversion-lib.jar OPTIONS```
+- Download the [orcid-conversion-lib-0.0.1-full.jar](https://github.com/ORCID/orcid-conversion-lib/raw/master/target/orcid-conversion-lib-0.0.1-full.jar) executable jar and execute: ```java -jar orcid-conversion-lib-0.0.1-full.jar OPTIONS```
 
 Options:
 
