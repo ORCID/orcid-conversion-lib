@@ -23,6 +23,8 @@ import javax.xml.validation.SchemaFactory;
 import org.orcid.conversionlib.CommandLineOptions.InputFormat;
 import org.xml.sax.SAXException;
 
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -44,6 +46,7 @@ public class OrcidTranslator<T> {
     Unmarshaller unmarshaller;
     Marshaller marshaller;
     Class<?> modelClass;
+    Class<?> errorClass;
     
     /**
      * @return a new v2.0 OrcidTranslator
@@ -77,8 +80,9 @@ public class OrcidTranslator<T> {
         mapper.registerModule(module);
         mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
         modelClass = location.modelClass;
+        errorClass = location.errorClass;
         try {
-            JAXBContext context = JAXBContext.newInstance(modelClass);
+            JAXBContext context = JAXBContext.newInstance(modelClass,errorClass);
             SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             URL url = Resources.getResource(location.location);
             unmarshaller = context.createUnmarshaller();

@@ -37,5 +37,8 @@ public class CommandLineOptions extends OptionsBase {
     
     @Option(name = "schema-validate", help = "If true, validate XML input and output against the schema", abbrev = 's', defaultValue = "false")
     public boolean schemaValidate;
+    
+    @Option(name = "tarball", help = "If true, input is a tar.gz containing XML, output is tar.gz containing JSON", abbrev = 't', defaultValue = "false")
+    public boolean tarball;
 
 }

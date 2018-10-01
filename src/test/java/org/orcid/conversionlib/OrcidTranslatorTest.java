@@ -24,7 +24,7 @@ public class OrcidTranslatorTest {
     @Test
     public void testReadJsonWriteXmlV2_0() throws JsonParseException, JsonMappingException, IOException, JAXBException {
         OrcidTranslator<Record> t = OrcidTranslator.v2_0(true);
-        URL url = Resources.getResource("test-publiclib-record-2.0.json");
+        URL url = Resources.getResource("test-conversionlib-record-2.0.json");
         InputStream is = url.openStream();
         Record r = t.readJsonRecord(new InputStreamReader(is));
         assertEquals("0000-0003-0902-4386", r.getOrcidIdentifier().getPath());
@@ -36,7 +36,7 @@ public class OrcidTranslatorTest {
     @Test
     public void testReadJsonWriteXmlV2_1() throws JsonParseException, JsonMappingException, IOException, JAXBException {
         OrcidTranslator<Record> t = OrcidTranslator.v2_1(true);
-        URL url = Resources.getResource("test-publiclib-record-2.1.json");
+        URL url = Resources.getResource("test-conversionlib-record-2.1.json");
         InputStream is = url.openStream();
         Record r = t.readJsonRecord(new InputStreamReader(is));
         assertEquals("0000-0003-0902-4386", r.getOrcidIdentifier().getPath());
@@ -48,7 +48,7 @@ public class OrcidTranslatorTest {
     @Test
     public void testReadJsonWriteXmlV3_0RC1() throws JsonParseException, JsonMappingException, IOException, JAXBException {
         OrcidTranslator<org.orcid.jaxb.model.v3.rc1.record.Record> t = OrcidTranslator.v3_0RC1(true);
-        URL url = Resources.getResource("test-publiclib-record-3.0_rc1.json");
+        URL url = Resources.getResource("test-conversionlib-record-3.0_rc1.json");
         InputStream is = url.openStream();
         org.orcid.jaxb.model.v3.rc1.record.Record r = t.readJsonRecord(new InputStreamReader(is));
         assertEquals("0000-0003-0902-4386", r.getOrcidIdentifier().getPath());
@@ -60,7 +60,7 @@ public class OrcidTranslatorTest {
     @Test
     public void testReadXmlWriteJsonV2_0() throws JAXBException, IOException {
         OrcidTranslator<Record> t = OrcidTranslator.v2_0(true);
-        URL url = Resources.getResource("test-publiclib-record-2.0.xml");
+        URL url = Resources.getResource("test-conversionlib-record-2.0.xml");
         InputStream is = url.openStream();
         Record r = t.readXmlRecord(new InputStreamReader(is));
         assertEquals("0000-0003-0902-4386", r.getOrcidIdentifier().getPath());
@@ -72,7 +72,7 @@ public class OrcidTranslatorTest {
     @Test
     public void testReadXmlWriteJsonV2_1() throws JAXBException, IOException {
         OrcidTranslator<Record> t = OrcidTranslator.v2_1(true);
-        URL url = Resources.getResource("test-publiclib-record-2.1.xml");
+        URL url = Resources.getResource("test-conversionlib-record-2.1.xml");
         InputStream is = url.openStream();
         Record r = t.readXmlRecord(new InputStreamReader(is));
         assertEquals("0000-0003-0902-4386", r.getOrcidIdentifier().getPath());
@@ -84,7 +84,7 @@ public class OrcidTranslatorTest {
     @Test
     public void testReadXmlWriteJsonV3_0RC1() throws JAXBException, IOException {
         OrcidTranslator<org.orcid.jaxb.model.v3.rc1.record.Record> t = OrcidTranslator.v3_0RC1(true);
-        URL url = Resources.getResource("test-publiclib-record-3.0_rc1.xml");
+        URL url = Resources.getResource("test-conversionlib-record-3.0_rc1.xml");
         InputStream is = url.openStream();
         org.orcid.jaxb.model.v3.rc1.record.Record r = t.readXmlRecord(new InputStreamReader(is));
         assertEquals("0000-0003-0902-4386", r.getOrcidIdentifier().getPath());
@@ -96,7 +96,7 @@ public class OrcidTranslatorTest {
     @Test
     public void testSchemaValidate() throws JsonParseException, JsonMappingException, IOException, JAXBException {
         OrcidTranslator<Record> t = OrcidTranslator.v2_1(true);
-        URL url = Resources.getResource("test-publiclib-record-2.1.json");
+        URL url = Resources.getResource("test-conversionlib-record-2.1.json");
         InputStream is = url.openStream();
         Record r = t.readJsonRecord(new InputStreamReader(is));
         r.getOrcidIdentifier().setPath("");

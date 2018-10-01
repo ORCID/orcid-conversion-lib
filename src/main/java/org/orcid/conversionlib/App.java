@@ -8,6 +8,8 @@ import java.util.Optional;
 
 import javax.xml.bind.JAXBException;
 
+import org.orcid.conversionlib.CommandLineOptions.InputFormat;
+
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.google.devtools.common.options.OptionsParser;
@@ -58,7 +60,16 @@ public class App {
                 t = OrcidTranslator.v3_0RC1(options.schemaValidate);
                 break;
             }
-            t.translate(Optional.ofNullable(options.fileName), Optional.ofNullable(options.outputFileName), options.inputFormat);
+            if (options.tarball) {
+                if (options.inputFormat.equals(InputFormat.JSON)) {
+                    System.err.println("tarball mode only supports XML input format");
+                    return;
+                }
+                OrcidArchiveTranslator<?> at = new OrcidArchiveTranslator<>(t);
+                at.translate(options.fileName, options.outputFileName);
+            }else {
+                t.translate(Optional.ofNullable(options.fileName), Optional.ofNullable(options.outputFileName), options.inputFormat);                
+            }
         } catch (FileNotFoundException e) {
             System.err.println("File not found: " + options.fileName);
             return;
