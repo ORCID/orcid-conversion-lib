@@ -28,12 +28,12 @@ Options:
 
 ## Example usage:
 
-- ```java -jar orcid-conversion-lib-0.0.2-full.jar --help```
-- ```java -jar orcid-conversion-lib-0.0.2-full.jar < ../src/test/resources/test-publiclib-record-2.1.xml```
-- ```java -jar orcid-conversion-lib-0.0.2-full.jar -i ../src/test/resources/test-publiclib-record-2.1.xml```
-- ```java -jar orcid-conversion-lib-0.0.2-full.jar -i ../src/test/resources/test-publiclib-record-2.1.json -f json```
-- ```java -jar orcid-conversion-lib-0.0.2-full.jar -i ../src/test/resources/test-publiclib-record-2.1.json -f json -o /tmp/record.xml```
-- ```java -jar orcid-conversion-lib-0.0.2-full.jar -i ../src/test/resources/test-publiclib-record-2.0.xml -v v2_0```
+- ```java -jar orcid-conversion-lib-3.0.7-full.jar --help```
+- ```java -jar orcid-conversion-lib-3.0.7-full.jar < ../src/test/resources/test-publiclib-record-3.0.xml```
+- ```java -jar orcid-conversion-lib-3.0.7-full.jar -i ../src/test/resources/test-publiclib-record-3.0.xml```
+- ```java -jar orcid-conversion-lib-3.0.7-full.jar -i ../src/test/resources/test-publiclib-record-3.0.json -f json```
+- ```java -jar orcid-conversion-lib-3.0.7-full.jar -i ../src/test/resources/test-publiclib-record-3.0.json -f json -o /tmp/record.xml```
+- ```java -jar orcid-conversion-lib-3.0.7-full.jar -i ../src/test/resources/test-publiclib-record-2.0.xml -v v2_0```
 
 ## Converting the ORCID data dump
 The following will convert the entire contents of a tar.gz file from XML to JSON, preserving paths.  Files are renamed from *.xml to *.json.
