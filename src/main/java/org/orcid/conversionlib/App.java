@@ -59,6 +59,9 @@ public class App {
             case V3_0RC1:
                 t = OrcidTranslator.v3_0RC1(options.schemaValidate);
                 break;
+            case V3_0:
+                t = OrcidTranslator.v3_0(options.schemaValidate);
+                break;
             }
             if (options.tarball) {
                 if (options.inputFormat.equals(InputFormat.JSON)) {

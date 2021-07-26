@@ -23,7 +23,7 @@ public class CommandLineOptions extends OptionsBase {
         }
     }
 
-    @Option(name = "schema-version", help = "the schema version of the source file", abbrev = 'v', defaultValue = "v2_1", converter = SchemaVersionConverter.class)
+    @Option(name = "schema-version", help = "the schema version of the source file", abbrev = 'v', defaultValue = "v3_0", converter = SchemaVersionConverter.class)
     public SchemaVersion schemaVersion;
 
     @Option(name = "format", help = "the format of the source file", abbrev = 'f', defaultValue = "xml", converter = InputFormatConverter.class)
