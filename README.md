@@ -4,7 +4,7 @@ Simple application that takes an ORCID XML or JSON file and outputs the other ve
 
 Works with V2.0, V2.1, v3_0rc1 and v3.0 (default) versions of the schema.
 
-If you wish to use the JAXB beans directly, please use [orcid-model.jar](https://github.com/ORCID/orcid-conversion-lib/raw/master/orcid-model/) as it contains just the model and none of the dependencies.  
+If you wish to use the JAXB beans directly, please use the maven model at https://mvnrepository.com/artifact/org.orcid 
 
 ## Usage
 
@@ -39,8 +39,4 @@ Options:
 The following will convert the entire contents of a tar.gz file from XML to JSON, preserving paths.  Files are renamed from *.xml to *.json.
 
 - ```java -jar orcid-conversion-lib-3.0.7-full.jar --tarball -i ../src/test/resources/test-archive-2.0.tar.gz -v v2_0 -o /tmp/output.tar.gz```
-
-## Model classes:
-
-This utility uses the ORCID maven model.  
  
