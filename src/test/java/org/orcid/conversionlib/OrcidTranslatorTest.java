@@ -94,6 +94,18 @@ public class OrcidTranslatorTest {
     }
     
     @Test
+    public void testReadXmlWriteJsonV3_0() throws JAXBException, IOException {
+        OrcidTranslator<org.orcid.jaxb.model.v3.release.record.Record> t = OrcidTranslator.v3_0(true);
+        URL url = Resources.getResource("test-conversionlib-record-3.0.xml");
+        InputStream is = url.openStream();
+        org.orcid.jaxb.model.v3.release.record.Record r = t.readXmlRecord(new InputStreamReader(is));
+        assertEquals("0000-0003-0902-4386", r.getOrcidIdentifier().getPath());
+        StringWriter sw = new StringWriter();
+        t.writeJsonRecord(sw, r);
+        assertTrue(sw.toString().contains("\"path\" : \"0000-0003-0902-4386\","));
+    }
+    
+    @Test
     public void testSchemaValidate() throws JsonParseException, JsonMappingException, IOException, JAXBException {
         OrcidTranslator<Record> t = OrcidTranslator.v2_1(true);
         URL url = Resources.getResource("test-conversionlib-record-2.1.json");
@@ -109,6 +121,25 @@ public class OrcidTranslatorTest {
         }
         //now test to make sure we can bypass
         OrcidTranslator<Record> t2 = OrcidTranslator.v2_1(false);
+        t2.writeXmlRecord(sw, r);
+    }
+    
+    @Test
+    public void testSchemaValidateV3_0() throws JsonParseException, JsonMappingException, IOException, JAXBException {
+        OrcidTranslator<org.orcid.jaxb.model.v3.release.record.Record> t = OrcidTranslator.v3_0(true);
+        URL url = Resources.getResource("test-conversionlib-record-3.0.json");
+        InputStream is = url.openStream();
+        org.orcid.jaxb.model.v3.release.record.Record r = t.readJsonRecord(new InputStreamReader(is));
+        r.getOrcidIdentifier().setPath("");
+        StringWriter sw = new StringWriter();
+        try{
+            t.writeXmlRecord(sw, r);
+            fail("did not schema validate invalid record");
+        }catch(MarshalException e){
+           
+        }
+        //now test to make sure we can bypass
+        OrcidTranslator<org.orcid.jaxb.model.v3.release.record.Record> t2 = OrcidTranslator.v3_0(false);
         t2.writeXmlRecord(sw, r);
     }
 

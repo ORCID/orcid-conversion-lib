@@ -4,7 +4,7 @@
 
 	<groupId>org.orcid</groupId>
 	<artifactId>orcid-conversion-lib</artifactId>
-	<version>0.0.2</version>
+	<version>3.0.7</version>
 	<packaging>jar</packaging>
 
 	<name>orcid-conversion-lib</name>
@@ -16,8 +16,7 @@
 
 	<!-- NOTE TO DEVELOPERS -->
 	<!-- `mvn clean install` compiles, tests and generates FAT executable jar -->
-	<!-- `mvn dependency:copy -Dcopy.artifactId=orcid-model` creates a copy of your current orcid-model jar in the repo -->
-
+	
 	<build>
 		<plugins>
 			<!-- Set a compiler level -->
@@ -87,26 +86,6 @@
 				</executions>
 			</plugin>
 
-			<!-- We can use `mvn dependency:copy -Dcopy.artifactId=orcid-model` to copy 
-				the current orcid-model into the repo -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<configuration>
-					<artifactItems>
-						<artifactItem>
-							<!-- hardcode values, or use properties, depending on what you want 
-								to do -->
-							<groupId>org.orcid</groupId>
-							<artifactId>orcid-model</artifactId>
-							<version>1.1.5-SNAPSHOT</version>
-							<destFileName>orcid-model-2.1.jar</destFileName>
-							<outputDirectory>orcid-model</outputDirectory>
-						</artifactItem>
-					</artifactItems>
-				</configuration>
-			</plugin>
-
 		</plugins>
 
 	</build>
@@ -119,10 +98,11 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+<!-- https://mvnrepository.com/artifact/org.orcid/orcid-model -->
 		<dependency>
-			<groupId>org.orcid</groupId>
-			<artifactId>orcid-model</artifactId>
-			<version>1.1.5-SNAPSHOT</version>
+		    <groupId>org.orcid</groupId>
+		    <artifactId>orcid-model</artifactId>
+		    <version>3.0.7</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>

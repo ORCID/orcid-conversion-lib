@@ -70,6 +70,14 @@ public class OrcidTranslator<T> {
     }
 
     /**
+     * @return a new v3.0 OrcidTranslator
+     */
+    public static OrcidTranslator<org.orcid.jaxb.model.v3.release.record.Record> v3_0(boolean schemaValidate){
+        return new OrcidTranslator<org.orcid.jaxb.model.v3.release.record.Record>(SchemaVersion.V3_0,schemaValidate);
+    }
+
+    
+    /**
      * Creates a translator suitable for v2.1 or v2.0 API results. Initialises
      * marshaller and unmarshaler
      * 
